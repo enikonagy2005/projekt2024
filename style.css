@@ -1,6 +1,6 @@
 /* Alap formázás */
 body {
-  background-image: url('háttér.jpg');
+  background-image: url('hatter2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
     font-family: Arial, sans-serif;
@@ -83,5 +83,12 @@ body {
   .right {
     border: 2px solid black;
   }
+img{
+  float: left;
+  margin-right: 70px;
+  
 
+
+
+}
   
