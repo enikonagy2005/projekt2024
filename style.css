@@ -68,4 +68,17 @@ body {
     bottom: 0;
     width: 100%;
   }
+  #a {
+    margin-left: 5%;
+  }
+  .left {
+    border: 2px solid black;
+  }
+  .mid {
+    border: 2px solid black;
+  }
+  .right {
+    border: 2px solid black;
+  }
+
   
