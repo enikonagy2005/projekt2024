@@ -75,7 +75,6 @@ body {
     margin-left: 5%;
   }
   .left {
-    border: 2px solid black;
   }
   .mid {
     border: 2px solid black;
@@ -85,12 +84,9 @@ body {
   }
 img{
   float: left;
-
-
 }
 
 header{
   background-color:hsla(0, 0%, 70%,0.6);
+  margin-bottom: 3%;
 }
-
-  
