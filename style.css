@@ -74,12 +74,6 @@ body {
   #a {
     margin-left: 5%;
   }
-  .mid {
-    border: 2px solid black;
-  }
-  .right {
-    border: 2px solid black;
-  }
 img{
   float: left;
 }
@@ -88,17 +82,13 @@ header{
   background-color:hsla(0, 0%, 70%,0.6);
   margin-bottom: 3%;
 }
-.column{
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-.mid {
+.left,.left2 {
   border: 2px solid black;
+  float:left;
+  text-align: center;
+  width:auto;
   height: auto;
 }
-#text {
-  color: lightcoral;
-  font-family: cursive;
+.left {
+  margin-bottom: 5%;
 }
