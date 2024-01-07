@@ -74,8 +74,6 @@ body {
   #a {
     margin-left: 5%;
   }
-  .left {
-  }
   .mid {
     border: 2px solid black;
   }
@@ -89,4 +87,18 @@ img{
 header{
   background-color:hsla(0, 0%, 70%,0.6);
   margin-bottom: 3%;
+}
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.mid {
+  border: 2px solid black;
+  height: auto;
+}
+#text {
+  color: lightcoral;
+  font-family: cursive;
 }
