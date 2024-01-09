@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Főzős Oldal Regisztráció</title>
 </head>
+
 <body class="bg-light">
     <div class="container my-5">
         <div class="card mx-auto" style="max-width: 400px;">
@@ -32,7 +34,8 @@
 
                     <div class="form-group">
                         <label for="confirm_password">Jelszó megerősítése:</label>
-                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password"
+                            required>
                     </div>
 
                     <input type="submit" id="register" class="btn btn-primary btn-block" value="Regisztráció">
@@ -44,5 +47,45 @@
             </div>
         </div>
     </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyBVDGXtWNyCFhdnt5aL0jRKTpIIvZLZ8Dk",
+            authDomain: "projekt2024-25e9a.firebaseapp.com",
+            databaseURL: "https://projekt2024-25e9a-default-rtdb.firebaseio.com",
+            projectId: "projekt2024-25e9a",
+            storageBucket: "projekt2024-25e9a.appspot.com",
+            messagingSenderId: "2331780875",
+            appId: "1:2331780875:web:1d404ade39890d2b27a40e",
+            measurementId: "G-GMNPKTR8JS"
+        };
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById("register").addEventListener("click", function (event) {
+            event.preventDefault();
+            var value_mail = document.getElementById("email").value;
+            var value_username = document.getElementById("username").value;
+            var value_pass = document.getElementById("password").value;
+
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            createUserWithEmailAndPassword(auth, email, password).then(function (userCredential) {
+                //Reg Success
+                var user = userCredential.user;
+                alert("Sikeres regisztráció!", user);
+            })
+                .catch(function (error) {
+                    //Something wrong
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    console.error("Hiba a regisztráció során!", errorCode,
+                        errorMessage);
+                })
+        });
+    </script>
 </body>
+
 </html>

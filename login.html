@@ -14,7 +14,7 @@
                 <h2>Üdv a Főzős Oldalon</h2>
             </div>
             <div class="card-body">
-                <form action="login.php" method="post">
+                <form action="projekt2024.html" method="post">
                     <div class="form-group">
                         <label for="username">Felhasználónév:</label>
                         <input type="text" class="form-control" id="username" name="username" required>
@@ -25,12 +25,52 @@
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
 
-                    <button type="submit" class="btn btn-success btn-block">Bejelentkezés</button>
+                    <button type="submit" id="login" class="btn btn-success btn-block">Bejelentkezés</button>
 
                     <p class="mt-3 text-center">Még nincs fiókod? <a href="register.html">Regisztrálj egyet!</a></p>
                 </form>
+                <p id="err" style="justify-content: center; text-align: center;"></p>
             </div>
         </div>
     </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyBVDGXtWNyCFhdnt5aL0jRKTpIIvZLZ8Dk",
+            authDomain: "projekt2024-25e9a.firebaseapp.com",
+            databaseURL: "https://projekt2024-25e9a-default-rtdb.firebaseio.com",
+            projectId: "projekt2024-25e9a",
+            storageBucket: "projekt2024-25e9a.appspot.com",
+            messagingSenderId: "2331780875",
+            appId: "1:2331780875:web:1d404ade39890d2b27a40e",
+            measurementId: "G-GMNPKTR8JS"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+  
+        document.getElementById("login").addEventListener("click", function (event){
+            event.preventDefault();
+  
+            var email = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            signInWithEmailAndPassword(auth, email, password)
+            .then(function (userCredential) {
+  
+            var user = userCredential.user;
+            alert("Sikeres bejelentkezés!", user);
+            window.location.replace("projekt2024.html");
+            })
+            .catch(function (error) {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.error("ERROR Login:", errorCode, errorMessage);
+            document.getElementById("err").innerHTML = "Hibás felhasználónév vagy jelszó!"; 
+            })
+        });
+  
+      </script>
 </body>
 </html>
