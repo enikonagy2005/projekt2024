@@ -59,7 +59,30 @@ header{
   margin-top: 5%;
 }
 .dessert {
-  background-image: url('dessert.jpg');
+  background-image: url('desszert.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.sutemeny{
+  background-image: url('sutemeny.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+
+}
+.levesek{
+  background-image: url('levesek.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+.foetelek{
+  background-image: url('foetel.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
