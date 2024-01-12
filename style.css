@@ -1,6 +1,6 @@
 /* Alap formázás */
 body {
-  background-image: url('hatter3.gif');
+  background-image: url('img/hatter3.gif');
   background-size: cover;
   background-repeat: no-repeat;
     font-family: Arial, sans-serif;
@@ -59,7 +59,7 @@ header{
   margin-top: 5%;
 }
 .dessert {
-  background-image: url('desszert.jpg');
+  background-image: url('img/desszert.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,7 +67,7 @@ header{
 }
 
 .sutemeny{
-  background-image: url('sutemeny.jpg');
+  background-image: url('img/sutemeny.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -75,14 +75,14 @@ header{
 
 }
 .levesek{
-  background-image: url('levesek.jpg');
+  background-image: url('img/levesek.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
 }
 .foetelek{
-  background-image: url('foetel.jpg');
+  background-image: url('img/foetel.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
