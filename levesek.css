@@ -8,11 +8,12 @@ body {
       line-height: 1.6;
     }
 .mid {
-    border: 2px solid black;
-    background-color: white;
     height: auto;
     width: auto;
-    border-radius: 2px;
+    border-radius: 5px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border: 1px solid gold;
 }
   
 header {
@@ -72,4 +73,10 @@ justify-content: center;
   }
   .card-header {
     text-align: center;
+  }
+  .text {
+    color: white;
+  }
+  #title {
+    color: white;
   }
