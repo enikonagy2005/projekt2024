@@ -47,7 +47,7 @@ header {
     background-color:hsla(0, 0%, 70%,0.6);
     margin-bottom: 3%;
   }
-  #gesztenyekrem {
+  #levesimg {
     margin-top: 1%;
     margin-right: 7%;
   }
@@ -89,3 +89,9 @@ justify-content: center;
       border-radius: 5px;
       margin-left: 2%;
   }
+  #fokhagymakremlev {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 2%;
+}
