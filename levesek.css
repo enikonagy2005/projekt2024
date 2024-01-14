@@ -51,12 +51,6 @@ header {
     margin-top: 1%;
     margin-right: 7%;
   }
-  #gesztkep {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-left: 2%;
-}
 .container {
 display: flex;
 align-items: center;
@@ -83,15 +77,9 @@ justify-content: center;
   .text {
     margin-left: 2%;
   }
-  #sajtkremlev {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-      margin-left: 2%;
-  }
-  #fokhagymakremlev {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-left: 2%;
+#kep {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-left: 2%;
 }
